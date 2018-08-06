@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑菜品</title>
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <link rel="stylesheet" href="./lib/bootstrap.css">
+    <link rel="stylesheet" href="./css/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/noArrows.css">
+    <link rel="stylesheet" href="./css/editCourse.css">
+</head>
+
+<body>
+    <!-- 导航栏(´･ω･`) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="main-log" src="./img/logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首页
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="搜索订单号" aria-label="Search">
+                    <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav my-2">
+                    <li class="nav-item dropdown" id='login'>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            用户名
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" id='dropdown-list'>
+                            <a class="dropdown-item" href="#1" onclick="logout()">登出</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#1">我的订单</a>
+                            <div class="dropdown-divider add-cources"></div>
+                            <a class="dropdown-item add-cources" href="#1" onclick="add_courses()">编辑菜品</a>
+                        </div>
+                    </li>
+                    <i class="fa fa-user-circle" style="color: aliceblue;font-size: 30px;margin-top:4px;"></i>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 内容主体 -->
+    <div class="container">
+        <!-- 面包屑导航 -->
+        <ul class="breadcrumb" style="margin-top: 20px;background-color: #f8f9fa">
+            <li class="breadcrumb-item">
+                <a href="#" onclick="window.location.href='./home.html'">首页</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#" onclick="window.location.href='./allOrder.html'">编辑菜品</a>
+            </li>
+            <li class="breadcrumb-item active">
+                编辑
+            </li>
+        </ul>
+
+        <!-- 菜单清单 -->
+        <div class="row">
+            <div class="col">
+                <div class="card" style="margin-top: -20px;">
+                    <div class="card-header" style="background-color:wheat;color: black;">
+                        <div class="row">
+                            <div class="col">
+                                <h2>编辑菜品</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-body table-responsive" style="min-height: 620px;">
+
+                        <form name="submit-edit" action="" method="post" enctype="multipart/form-data" id="submit-form">
+                            <div class="form-group">
+                                <label for="course-name">菜名:</label>
+                                <input type="text" class="form-control" name="course-name" id="course-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="kind">种类:</label>
+                                <input type="text" class="form-control" name="kind" id="kind">
+                            </div>
+                            <div class="form-group">
+                                <label for="price">价格:</label>
+                                <input type="text" class="form-control" id="price">
+                            </div>
+                            <div class="form-group">
+                                <label for="detail">菜品简介:</label>
+                                <input type="text" class="form-control" id="detail">
+                            </div>
+                            <div class="form-group">
+                                <label for="image">图片:</label>
+                                <br>
+                                <input type="file" name="image" id="image" accept="image/png, image/jpeg, image/gif, image/jpg">
+                                <div style="color:crimson">.jpg,.jpeg,.png,大小不超过2M
+                                </div>
+                                <div class="demo"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">提交</button>
+                        </form>
+                    </div>
+
+                    <div class="card-footer" style="background-color:#343a40">
+                        <a style="color: white;" onclick="history.back()" href="#1">
+                            <<<返回 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚(((o(*ﾟ▽ﾟ*)o))) -->
+        <div class="row">
+            <div class="col" style="margin-top:20px;text-align: center;background-color: #f8f9fa;font-size: 12px;color: #666;">
+                <p>-此网页仅作学习交流使用-</p>
+                <p style="font-size: 17px;">
+                    <i class="fa fa-github"></i>
+                    <a>github&nbsp&nbsp
+                        <a> |&nbsp&nbsp
+                            <i class="fa fa-users"></i>./aid1805/aux</p>
+                <p>九个男人学习小组
+                    <i class="fa fa-copyright"></i> 2017-2018</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/localStorage.js"></script>
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/popper.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./js/editCourse.js"></script>
+</body>
+
+</html>

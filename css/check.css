@@ -1,0 +1,35 @@
+.table-div {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.list-group-item.active {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.list-group-item {
+    background-color: #f4f4f4;
+}
+
+.main-table {
+    color: #18a2b8;
+}
+
+.thead-info {
+    background-color: #343a40;
+}
+
+tbody tr {
+    color: black;
+    background-color: #f4f4f4;
+}
+
+.table-hover tbody tr:hover {
+    color: rgb(233, 233, 233);
+    background-color: rgba(0, 0, 0, 0.49);
+}
+
+.table {
+    max-width: 100%;
+}

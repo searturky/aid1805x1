@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>九个男人点餐平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./img/icon.ico" >
+    <link rel="stylesheet" href="./lib/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="top">
+        <span style="color: white">NINE-MAN PLATFORM</span>
+        <div class="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="form-group">
+                                <label for="name"></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter username">
+                                <div class="alert alert-danger">
+                                        <strong>错误!</strong> 没有此账号
+                                      </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd"></label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                                <div class="alert alert-danger">
+                                        <strong>错误!</strong> 密码错误。
+                                      </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="vf"></label>
+                                <div class="row">
+                                    <div class="col-8">
+                                        <input type="text" class="form-control  verification" id="vf" placeholder="Enter verification" maxlength="4">
+                                        <div class="alert alert-danger">
+                                                <strong>错误!</strong> 验证码错误 。
+                                              </div>
+                                    </div>
+                                    
+                                    <div class="col-4">
+                                        <div class="code">
+                                            <canvas class="J_codeimg" id="myCanvas" onclick="vcode(ctx);">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin: 20px 0;text-align: center">
+                                <div class="col-6">
+                                    <button type="submit" class="submit">Log In</button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="submit">Sign In</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="con_wrap con_wrap_4 wrap_show">
+        <div class="motor_hook">
+            <div class="motor_wrap">
+                <div class="man">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                </div>
+                <div class="motor">
+                    <div class="wheel_front"></div>
+                    <div class="wheel_back"></div>
+                    <div class="motor_body"></div>
+                    <div class="motor_handle"></div>
+                    <div class="motor_pipe">
+                        <i class="pipe"></i>
+                        <i class="smoke smoke_1"></i>
+                        <i class="smoke smoke_2"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="motor_shadow"></div>
+        </div>
+
+        <div class="tree_wrap">
+            <span class="tree_1">
+                <i></i>
+            </span>
+            <span class="tree_2">
+                <i></i>
+            </span>
+        </div>
+        <div class="wording_wrap">
+            <div class="wording wording_4"></div>
+        </div>
+    </div>
+    <script src="./lib/jquery.js"></script>
+    <script src="./js/index.js"></script>
+        
+</body>
+
+</html>

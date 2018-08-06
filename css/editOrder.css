@@ -1,0 +1,24 @@
+.hover-change:hover {
+    cursor: pointer;
+    color: #17a2b8;
+}
+
+#page-input {
+    width: 40px;
+    display: inline-block;
+    height: 24px;
+    border: darkgrey solid 1px;
+}
+
+#next-five-page {
+    color: #007bff !important;
+}
+
+#home-page {
+    color: #007bff !important;
+}
+
+.demo {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,40 @@
+.hover-change:hover {
+    cursor: pointer;
+    color: #17a2b8;
+}
+
+#fy li { 
+    
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#fy li a{
+    color: #666;
+    font-size: 16px;
+}
+
+.this-page {
+    color: #007bff !important;
+}
+
+#page-input {
+    width: 40px;
+    display: inline-block;
+    height: 24px;
+    border: darkgrey solid 1px;
+}
+
+#next-five-page {
+    color: #007bff !important;
+}
+
+#home-page {
+    color: #007bff !important;
+}
+
+.demo {
+    width: 200px;
+    height: 200px;
+}
